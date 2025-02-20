@@ -1,7 +1,7 @@
 # Kick Auth Library
 
-[![NPM Version](https://img.shields.io/npm/v/kick.auth)](https://www.npmjs.com/package/kick.auth)
-[![License](https://img.shields.io/npm/l/kick.auth)](https://github.com/yourusername/kick.auth/blob/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/kick-auth)](https://www.npmjs.com/package/kick-auth)
+[![License](https://img.shields.io/npm/l/kick-auth)](https://github.com/yourusername/kick-auth/blob/main/LICENSE)
 
 A TypeScript/JavaScript library for implementing Kick.com OAuth 2.1 authentication in Node.js applications.
 
@@ -10,18 +10,17 @@ A TypeScript/JavaScript library for implementing Kick.com OAuth 2.1 authenticati
 - [Quick Start](#-quick-start)
 - [Available Scopes](#-available-scopes)
 - [Error Handling](#-error-handling)
-- [Security Best Practices](#-security-best-practices)
 - [Examples](#-examples)
 - [TypeScript Support](#-typescript-support)
 
 ## 📥 Installation
 
 ```bash
-npm install kick.auth
+npm install kick-auth
 # or
-yarn add kick.auth
+yarn add kick-auth
 # or
-pnpm add kick.auth
+pnpm add kick-auth
 ```
 
 ## 🚀 Quick Start
@@ -282,20 +281,12 @@ try {
 }
 ```
 
-## 🛡️ Security Best Practices
-
-1. 🔒 Never expose your Client Secret in client-side code
-2. ✅ Always validate the state parameter
-3. 🔐 Store tokens securely
-4. 📝 Use environment variables for sensitive data
-5. 🔄 Implement proper token refresh logic
-
 ## 💡 Examples
 
 ### Express.js Implementation
 
 ```typescript
-import { KickAuthClient } from 'kick.auth';
+import { KickAuthClient } from 'kick-auth';
 import express from 'express';
 import session from 'express-session';
 
@@ -350,7 +341,7 @@ import {
     TokenResponse, 
     KickAuthConfig,
     TokenHintType 
-} from 'kick.auth';
+} from 'kick-auth';
 
 // Full type support for configuration
 const config: KickAuthConfig = {
